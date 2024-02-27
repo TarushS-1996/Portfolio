@@ -3,6 +3,7 @@ import os
 from streamlit_option_menu import option_menu
 import requests as re
 from streamlit_lottie import st_lottie
+from content.contactpage import contactpage
 
 def load_lottie_url(url: str):
     r = re.get(url)
@@ -25,7 +26,16 @@ def main():
                                orientation='horizontal')
 
     
-    
+    st.markdown(
+        """
+        <style>
+            section[data-testid="stSidebar"] {
+                width: 180px !important; # Set the width to your desired value
+            }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
     
     st.sidebar.image('Profile.jpeg', use_column_width=True)
     st.markdown(
@@ -46,27 +56,19 @@ def main():
         <a href="https://www.linkedin.com/in/tarush-singh-246144113/" target="_blank" style="display: inline-block; vertical-align: middle; text-decoration: none; color: white;">
             <img src="https://icons.getbootstrap.com/assets/icons/linkedin.svg" alt="LinkedIn" width="30" height="30" style="float: left; margin-right: 10px;">
             <span style="font-size: 16px; display: inline-block; vertical-align: middle; color: white;"> :LinkedIn</span>
-        </a>
-        """,
-        unsafe_allow_html=True
-    )
-    
-    st.sidebar.markdown(
-        """
+        </a><br>
         <a href="https://github.com/TarushS-1996" target="_blank" style="display: inline-block; vertical-align: middle; text-decoration: none; color: white;">
             <img src="https://icons.getbootstrap.com/assets/icons/github.svg" alt="LinkedIn" width="30" height="30" style="float: left; margin-right: 10px;">
             <span style="font-size: 16px; display: inline-block; vertical-align: middle; color: white;"> :Github</span>
-        </a>
-        """,
-        unsafe_allow_html=True
-    )
-    
-    st.sidebar.markdown(
-        """
-        <a href="singh.tarus@northeastern.edu" target="_blank" style="display: inline-block; vertical-align: middle; text-decoration: none; color: white;">
+        </a><br>
+        <a href="mailto:singh.tarus@northeastern.edu" target="_blank" style="display: inline-block; vertical-align: middle; text-decoration: none; color: white;">
             <img src="https://icons.getbootstrap.com/assets/icons/envelope-at-fill.svg" alt="LinkedIn" width="30" height="30" style="float: left; margin-right: 10px;">
             <span style="font-size: 16px; display: inline-block; vertical-align: middle; color: white;"> :Email</span>
-        </a>
+        </a><br>
+        <a href="https://medium.com/@singh.tarus" target="_blank" style="display: inline-block; vertical-align: middle; text-decoration: none; color: white;">
+            <img src="https://icons.getbootstrap.com/assets/icons/medium.svg" alt="LinkedIn" width="30" height="30" style="float: left; margin-right: 10px;">
+            <span style="font-size: 16px; display: inline-block; vertical-align: middle; color: white;"> :Medium</span>
+        </a><br>
         """,
         unsafe_allow_html=True
     )
@@ -207,27 +209,7 @@ def projects_page():
 
 
 def contact_page():
-    col1, col2 = st.columns([0.5, 0.5])
-    
-    with col1:
-        st.header("Contact Me")
-
-        # Create a form for contact details
-        st.subheader("Contact Form")
-        name = st.text_input("Name")
-        email = st.text_input("Email")
-        message = st.text_area("Message")
-        
-        # Add a submit button
-        if st.button("Submit"):
-            # Handle form submission (you can add your logic here)
-            if name and email and message:
-                st.success("Message sent successfully!")
-            else:
-                st.warning("Please fill out the form above")
-    
-    with col2:
-        st_lottie(contact_gif, speed=1)
+    contactpage(contact_gif)
 
 if __name__ == '__main__':
     main()
