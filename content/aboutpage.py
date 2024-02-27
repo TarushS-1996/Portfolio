@@ -35,37 +35,7 @@ def homepage(about_gif1, education_gif):
             Let's connect and create something incredible together. Thank you!</div>
             """
         st.markdown(about_me_text, unsafe_allow_html=True)
-        st.subheader("Experience")
-        experience_text = """
-            <style>
-                @media screen and (max-width: 600px) {
-                    .content {
-                        font-size: 14px;
-                    }
-                }
-                @media screen and (min-width: 601px) and (max-width: 900px) {
-                    .content {
-                        font-size: 16px;
-                    }
-                }
-                @media screen and (min-width: 901px) {
-                    .content {
-                        font-size: 18px;
-                    }
-                }
-            </style>
-            <div class="content">
-                <strong>NLP Development Head</strong> - HappSales pvt ltd, Bangalore (Sep 2019 - Apr 2022)<br><br>
-                &emsp; - Led NLP and deep learning projects for HappSales CRM product<br>
-                &emsp; - Developed NLU models in RASA for app CRUD operations<br>
-                &emsp; - Designed fine-tuned NER based SQL data fetching for QA<br>
-                &emsp; - Managed AWS Lambda integration for NLP engine hosting<br>
-                &emsp; - Enhanced productivity by 10-15% through UI and data entry optimizations<br>
-                &emsp; - Produced comprehensive documentation for NLP tools and FAQs<br>
-                <br>
-            </div>
-            """
-        st.markdown(experience_text, unsafe_allow_html=True)
+        
 
     # In the second column, display the image
     
