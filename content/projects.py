@@ -1,13 +1,37 @@
 from PIL import Image
 import streamlit as st
 import os
+import streamlit_timeline as timeline
+import json
 
+def read_json(json_path):
+    with open(json_path, "r") as f:
+        data = json.load(f)
+    return data
+
+timeline_data = read_json("content/JSON/timeline.json")
 
 def load_images(image_path):
     img = Image.open(image_path)
     return img
 
 def projects_page():
+    # Define the CSS style block for the dark theme
+    dark_theme_css = """
+        <style>
+            .timeline-container {
+                background-color: #333; /* Dark background color */
+                color: #fff; /* Light text color */
+            }
+            .timeline-item {
+                border-color: #666; /* Dark border color */
+            }
+            /* Add more custom styling as needed */
+        </style>
+    """
+
+    # Render the dark theme CSS style block
+    st.markdown(dark_theme_css, unsafe_allow_html=True)
     # Download resume
     st.header("Experience")
     experience_text = """
@@ -39,26 +63,26 @@ def projects_page():
                 <br>
             </div>
             """
-    #col1, col2, col3 = st.columns([1, 1, 1])  
-    col1, col2 = st.columns([2, 1])
-    with col1:
-        st.markdown(experience_text, unsafe_allow_html=True)
-    with col2:
-        st.subheader("Download Resume")
-        resume_path = "Tarush.pdf"
-        if os.path.exists(resume_path):
-            st.download_button(
-                label="Download Resume",
-                data=open(resume_path, "rb").read(),
-                file_name="Tarush_Resume.pdf",
-                mime="application/pdf"
-            )
-        else:
-            st.error("Resume file not found. Please check the file path.")
+    
+        #st.markdown(experience_text, unsafe_allow_html=True)
+    timeline.timeline(timeline_data, height=380)        
+        
+    st.subheader("Download Resume")
+    resume_path = "Tarush.pdf"
+    if os.path.exists(resume_path):
+        st.download_button(
+            label="Download Resume",
+            data=open(resume_path, "rb").read(),
+            file_name="Tarush_Resume.pdf",
+            mime="application/pdf"
+        )
+    else:
+        st.error("Resume file not found. Please check the file path.")
     st.markdown("---")  # Horizontal line to separate sections
 
     st.header("Projects")
-    
+    ### try to have the projects as columns instead of one below the other
+    #col1, col2, col3 = st.columns([1, 1, 1])  
     # Deep Learning section
     with st.expander("Deep Learning"):
         col1, col2 = st.columns([0.4, 2])

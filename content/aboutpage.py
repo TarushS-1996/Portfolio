@@ -80,60 +80,34 @@ def homepage(about_gif1, education_gif):
     
     st.markdown("---")
     
-    st.subheader("Medals and Certifications")
-    st.write("""
-        <style>
-                @media screen and (max-width: 600px) {
-                    .content {
-                        font-size: 14px;
-                    }
-                }
-                @media screen and (min-width: 601px) and (max-width: 900px) {
-                    .content {
-                        font-size: 16px;
-                    }
-                }
-                @media screen and (min-width: 901px) {
-                    .content {
-                        font-size: 18px;
-                    }
-                }
-        </style>
-        <div class = "content">                
-        - Presented a paper in IEEE IROS 2018 Fan challenge in Spain on 7-DOF robotic manipulator<br>
-        - Won 2 golds and 1 bronze in “RoboGames 2018” held in the USA for Bipedal robots.<br>
-        - Won 2nd position for the navigational shoes for visually impaired at Konvolve SRM University<br>
-        - Won silver at ‘Indo US Robo League 2015‘ held in IIT Mumbai<br>
-        - Deep Neural Networks May 2019 Improving Hyperparameter tuning, Regularization and Optimization Coursera Certification<br>
-        </div>
-        """, unsafe_allow_html=True)
-
-    st.markdown("---")
-    
     st.subheader("Technical Skills")
     st.markdown("""
         <style>
-                @media screen and (max-width: 600px) {
-                    .content {
-                        font-size: 14px;
-                    }
+            @media screen and (max-width: 600px) {
+                .table-content {
+                    font-size: 14px;
                 }
-                @media screen and (min-width: 601px) and (max-width: 900px) {
-                    .content {
-                        font-size: 16px;
-                    }
+            }
+            @media screen and (min-width: 601px) and (max-width: 900px) {
+                .table-content {
+                    font-size: 16px;
                 }
-                @media screen and (min-width: 901px) {
-                    .content {
-                        font-size: 18px;
-                    }
+            }
+            @media screen and (min-width: 901px) {
+                .table-content {
+                    font-size: 18px;
                 }
+            }
         </style>
-        <div class = "content">
-            - <strong>Programming Language</strong>: Python, Java, HTML, SQL, C/C++, CSS<br><br>
-            - <strong>Cloud</strong>: AWS Lambda, AWS EC2, AWS Elastic search, AWS Sagemaker, AWS SNS, Azure Function, Azure VM, REST API, Terraform, Kubernetes, FLASK, RESTful services<br><br>
-            - <strong>AI Tools</strong>: Scikit-learn, OpenCV, Tensorflow, RASA, TfLearn, AutoML, Keras, Huggingface Transformers, XGBoost, GBM, NLTK, SpaCy, PyTorch, GLM, ResNet, Fast-RCNN, Alexnet, YOLO, Vision Transformers, ONNX, TensorRT<br><br>
-            - <strong>Development tools</strong>: Postman, Git, Jupyter Notebook, Weights&Biases
-        </div>""", 
-        unsafe_allow_html=True
-    )
+    """, unsafe_allow_html=True)
+
+    # Data for the table
+    data = [
+        ["Programming Language", "Python, Java, HTML, SQL, C/C++, CSS"],
+        ["Cloud", "AWS Lambda, AWS EC2, AWS Elastic search, AWS Sagemaker, AWS SNS, Azure Function, Azure VM, REST API, Terraform, Kubernetes, FLASK, RESTful services"],
+        ["AI Tools", "Scikit-learn, OpenCV, Tensorflow, RASA, TfLearn, AutoML, Keras, Huggingface Transformers, XGBoost, GBM, NLTK, SpaCy, PyTorch, GLM, ResNet, Fast-RCNN, Alexnet, YOLO, Vision Transformers, ONNX, TensorRT"],
+        ["Development tools", "Postman, Git, Jupyter Notebook, Weights&Biases"]
+    ]
+
+    # Render the table
+    st.table(data)

@@ -3,3 +3,4 @@ pandas==1.0.1
 streamlit==0.79.0
 streamlit_option_menu
 streamlit_lottie
+streamlit_timeline==0.0.2
