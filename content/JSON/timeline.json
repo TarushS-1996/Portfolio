@@ -1,38 +1,86 @@
-{"events":[
-    {
-        "start_date":{"year": "2014", "month": "9"},
-        "end_date":{"year": "2018", "month": "5"},
-        "text":{"headline":"SRM Team Humanoid Electonics Domain Head", "text":"Worked as a electronics integration head at SRM Team Humanoid designing bipedal robots for gait and image processing applications. Assisted the computer vision team in developing miniture image segmentation models to run on low power devices like Raspberry Pi."}
-    }
-    ,{
-        "start_date":{"year": "2015", "month": "2"},
-        "text":{"headline":"IIT Mumbai Indo US Robo-League", "text":"Spearheaded development of simple manipulator arm for IIT Mumbai's Indo US Robo-League. Competed in grasping challenge which tasked a user from controlling the robot to sort small light boxes. Led to team to second place at the competition."}
-    }
-    ,{
-        "start_date":{"year": "2016", "month": "10"},
-        "text":{"headline":"BITS Pilani techfest", "text":"Collaborated with team humanoid members on developing a telepresence humanoid system to mimic user movements over long distances. Designed as a medical robot, the user would stand infront of a camera which would perform skeleton tracking and map te user movements to the robot while providing VR and haptic gloves as feedback. Secured a second place for best idea at the conference."}
-    },
-    {
-        "start_date":{"year": "2016", "month": "8"},
-        "text":{"headline":"SRM Konvolve", "text":"Competed at SRM Konvolve hackathon with problem statement of developing solutions for huamnitarian application. Designed a navigational shoe for visually imapred that provided haptic feedback in the direction of destination. The shoe connected to user's phone allowing for seemless integration with user's daily routine. Won 2nd place for the innovative idea."}
-    }
-    ,{
-        "start_date":{"year": "2018", "month": "4"},
-        "text":{"headline":"RoboGames 2018", "text":"Led the team to victory at competitions like RoboGames 2018 held in San Fransisco and won gold medal in Humanoid Bipedal Obstacle race. Won another gold for xylophone playing musical robot."}
-    }
-    ,{
-        "start_date":{"year": "2018", "month": "10"},
-        "text":{"headline":"IROS IEEE Fan Challenge", "text":"Joined HappSales PVT LTD as a software developer. Worked on developing a CRM product that was able to perform CRUD operations through natural language. Resulted in improved data entry speed and simplication of the application allowing for easier onboarding of customers. "}
-    }
-    
-    ,{
-        "start_date":{"year": "2019", "month": "9"},
-        "end_date":{"year": "2022", "month": "4"},
-        "text":{"headline":"NLP Development head HappSales PVT LTD", "text":"Worked on developing NLP solutions engine for HappSales pvt ltd CRM product. Designed a system that was able to perform CRUD operations through natural language. Resulted in improved data entry speed and simplication of the application allowing for easier onboarding of customers. "}
-    }
-    ,{
-        "start_date":{"year": "2022", "month": "9"},
-        "end_date":{"year": "2024", "month": "4"},
-        "text":{"headline": "Northeastern University Masters in Information Systems", "text": "Pursued my masters of science in Information Systems at Northeastern University. Focused on learning about the latest technologies and how they can be applied to solve real world problems. Took classes like Neural Network Architecture, High Performance Machine Learning and Data science to learn about Deep Learning methods and their optmization techniques. "}
-    }
-]}
+{
+    "events": [
+      {
+        "start_date": {
+          "year": 2014,
+          "month": 9
+        },
+        "end_date": {
+          "year": 2018,
+          "month": 5
+        },
+        "text": {
+          "headline": "SRM Team Humanoid Electonics Domain Head",
+          "text": "Led electronics integration for bipedal robots (gait & image processing). Assisted with developing low-power image segmentation models."
+        }
+      },
+      {
+        "start_date": {
+          "year": 2015,
+          "month": 2
+        },
+        "text": {
+          "headline": "IIT Mumbai Indo US Robo-League",
+          "text": "Led manipulator arm development for grasping competition. Achieved second place."
+        }
+      },
+      {
+        "start_date": {
+          "year": 2016,
+          "month": 10
+        },
+        "text": {
+          "headline": "BITS Pilani Techfest",
+          "text": "Co-developed telepresence humanoid system for medical applications (user movement mimicry). Secured second place for best idea."
+        }
+      },
+      {
+        "start_date": {
+          "year": 2016,
+          "month": 8
+        },
+        "text": {
+          "headline": "SRM Konvolve",
+          "text": "Designed navigational shoe with haptic feedback for visually impaired users. Won second place for innovation."
+        }
+      },
+      {
+        "start_date": {
+          "year": 2018,
+          "month": 4
+        },
+        "text": {
+          "headline": "RoboGames 2018",
+          "text": "Led team victories in Humanoid Bipedal Obstacle Race and Xylophone playing robot categories."
+        }
+      },
+      {
+        "start_date": {
+          "year": 2018,
+          "month": 10
+        },
+        "end_date": {
+          "year": 2022,
+          "month": 4
+        },
+        "text": {
+          "headline": "HappSales PVT LTD",
+          "text": "Developed CRM product using natural language for CRUD operations. Improved data entry speed and simplified application for easier customer onboarding."
+        }
+      },
+      {
+        "start_date": {
+          "year": 2022,
+          "month": 9
+        },
+        "end_date": {
+          "year": 2024,
+          "month": 4
+        },
+        "text": {
+          "headline": "Northeastern University Masters in Information Systems",
+          "text": "Pursuing Master's degree, focusing on applying technology to solve real-world problems. Taking courses in Deep Learning methods and optimization techniques."
+        }
+      }
+    ]
+  }

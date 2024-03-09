@@ -20,13 +20,18 @@ def projects_page():
     dark_theme_css = """
         <style>
             .timeline-container {
-                background-color: #333; /* Dark background color */
-                color: #fff; /* Light text color */
-            }
-            .timeline-item {
-                border-color: #666; /* Dark border color */
-            }
-            /* Add more custom styling as needed */
+            background-color: #333; /* Dark background color */
+            color: #fff; /* Light text color */
+        }
+
+        .timeline-event-content {
+            background-color: #444; /* Darker background for event content */
+            color: #ddd; /* Slightly lighter text color for better readability */
+        }
+
+        .timeline-item {
+            border-color: #666; /* Dark border color */
+        }
         </style>
     """
 
@@ -34,40 +39,7 @@ def projects_page():
     st.markdown(dark_theme_css, unsafe_allow_html=True)
     # Download resume
     st.header("Experience")
-    experience_text = """
-            <style>
-                @media screen and (max-width: 600px) {
-                    .content {
-                        font-size: 14px;
-                    }
-                }
-                @media screen and (min-width: 601px) and (max-width: 900px) {
-                    .content {
-                        font-size: 16px;
-                    }
-                }
-                @media screen and (min-width: 901px) {
-                    .content {
-                        font-size: 18px;
-                    }
-                }
-            </style>
-            <div class="content">
-                <strong>NLP Development Head</strong> - HappSales pvt ltd, Bangalore (Sep 2019 - Apr 2022)<br><br>
-                &emsp; - Led NLP and deep learning projects for HappSales CRM product<br>
-                &emsp; - Developed NLU models in RASA for app CRUD operations<br>
-                &emsp; - Designed fine-tuned NER based SQL data fetching for QA<br>
-                &emsp; - Managed AWS Lambda integration for NLP engine hosting<br>
-                &emsp; - Enhanced productivity by 10-15% through UI and data entry optimizations<br>
-                &emsp; - Produced comprehensive documentation for NLP tools and FAQs<br>
-                <br>
-            </div>
-            """
-    
-        #st.markdown(experience_text, unsafe_allow_html=True)
-    timeline.timeline(timeline_data, height=380)        
-        
-    st.subheader("Download Resume")
+    timeline.timeline(timeline_data, height=380)
     resume_path = "Tarush.pdf"
     if os.path.exists(resume_path):
         st.download_button(
