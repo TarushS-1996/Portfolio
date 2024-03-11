@@ -90,7 +90,7 @@ def main():
     elif selected == 'Experiences':
         projects_page()
     elif selected == 'Contact':
-        contactpage()
+        contactpage(contact_gif)
 
 if __name__ == '__main__':
     main()
