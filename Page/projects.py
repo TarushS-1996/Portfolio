@@ -4,6 +4,7 @@ import os
 import streamlit_timeline as timeline
 import json
 
+@st.cache
 def read_json(json_path):
     with open(json_path, "r") as f:
         data = json.load(f)
@@ -11,6 +12,7 @@ def read_json(json_path):
 
 timeline_data = read_json("Page/JSON/timeline.json")
 
+@st.cache(allow_output_mutation=True)
 def load_images(image_path):
     img = Image.open(image_path)
     return img
