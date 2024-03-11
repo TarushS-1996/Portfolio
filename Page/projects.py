@@ -56,7 +56,7 @@ def projects_page():
     ### try to have the projects as columns instead of one below the other
     #col1, col2, col3 = st.columns([1, 1, 1])  
     # Deep Learning section
-    with st.expander("Deep Learning"):
+    with st.expander("Deep Learning", expanded=True):
         col1, col2 = st.columns([0.4, 2])
         with col1:
             st.image(load_images("Content/images/starcraft2AI.png"))   
