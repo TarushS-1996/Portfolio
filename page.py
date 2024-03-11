@@ -3,12 +3,12 @@ import os
 from streamlit_option_menu import option_menu
 import requests as re
 from streamlit_lottie import st_lottie
-from content.contactpage import contactpage
-from content.aboutpage import homepage
-from content.projects import projects_page
+from Page.contactpage import contactpage
+from Page.aboutpage import homepage
+from Page.projects import projects_page
 from PIL import Image
 
-load_image = Image.open('Projects/images/starcraft2AI.png')
+load_image = Image.open('Content/images/starcraft2AI.png')
 
 def load_lottie_url(url: str):
     r = re.get(url)
@@ -46,7 +46,7 @@ def main():
         unsafe_allow_html=True,
     )
     
-    st.sidebar.image('Profile.jpeg', use_column_width=True)
+    st.sidebar.image('Content/images/Profile.jpeg', use_column_width=True)
     st.markdown(
         """
         <style>
