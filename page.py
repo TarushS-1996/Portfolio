@@ -86,30 +86,11 @@ def main():
     )
             
     if selected == 'About':
-        home_page()
+        homepage(about_gif1, education_gif)
     elif selected == 'Experiences':
-        project_page()
+        projects_page()
     elif selected == 'Contact':
-        contact_page()
-
-def home_page():
-    homepage(about_gif1, education_gif)    
-    
-def generate_links(category, count):
-    links = []
-    for i in range(1, count + 1):
-        link_url = f"https://yourwebsite.com/{category}/{i}"
-        link_text = f"{category} Link {i}"
-        link = f'<a href="{link_url}">{link_text}</a>'
-        links.append(link)
-    return links
-
-def project_page():
-    projects_page()        
-    
-
-def contact_page():
-    contactpage(contact_gif)
+        contactpage()
 
 if __name__ == '__main__':
     main()
