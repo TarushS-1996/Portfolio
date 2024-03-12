@@ -2,20 +2,14 @@ from PIL import Image
 import streamlit as st
 import os
 import streamlit_timeline as timeline
-import json
 
-def read_json(json_path):
-    with open(json_path, "r") as f:
-        data = json.load(f)
-    return data
-
-timeline_data = read_json("Page/JSON/timeline.json")
 
 def load_images(image_path):
     img = Image.open(image_path)
     return img
 
-def projects_page():
+def projects_page(timeLineData):
+    timeline_data = timeLineData
     # Define the CSS style block for the dark theme
     dark_theme_css = """
         <style>

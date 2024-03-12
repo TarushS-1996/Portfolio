@@ -1,0 +1,6 @@
+{
+    "Programming Language": "Python, Java, HTML, SQL, C/C++, CSS",
+    "Cloud": "AWS Lambda, AWS EC2, AWS Elastic search, AWS Sagemaker, AWS SNS, Azure Function, Azure VM, REST API, Terraform, Kubernetes, FLASK, RESTful services",
+    "AI Tools": "Scikit-learn, OpenCV, Tensorflow, RASA, TfLearn, AutoML, Keras, Huggingface Transformers, XGBoost, GBM, NLTK, SpaCy, PyTorch, GLM, ResNet, Fast-RCNN, Alexnet, YOLO, Vision Transformers, ONNX, TensorRT",
+    "Development tools": "Postman, Git, Jupyter Notebook, Weights&Biases"
+}

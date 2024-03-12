@@ -110,4 +110,4 @@ def homepage(about_gif1, education_gif):
     ]
 
     # Render the table
-    st.table(data)
+    st.dataframe(data, hide_index=True, use_container_width=True)

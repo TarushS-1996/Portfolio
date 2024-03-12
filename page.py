@@ -7,8 +7,17 @@ from Page.contactpage import contactpage
 from Page.aboutpage import homepage
 from Page.projects import projects_page
 from PIL import Image
+import json
 
 load_image = Image.open('Content/images/starcraft2AI.png')
+
+def read_json(json_path):
+    with open(json_path, "r") as f:
+        data = json.load(f)
+    return data
+
+timeline_data = read_json("Page/JSON/timeline.json")
+skillset_data = read_json("Page/JSON/skills.json")
 
 def load_lottie_url(url: str):
     r = re.get(url)
@@ -88,7 +97,7 @@ def main():
     if selected == 'About':
         homepage(about_gif1, education_gif)
     elif selected == 'Experiences':
-        projects_page()
+        projects_page(timeLineData=timeline_data)
     elif selected == 'Contact':
         contactpage(contact_gif)
 
