@@ -59,7 +59,7 @@ def projects_page():
     with st.expander("Deep Learning", expanded=True):
         col1, col2 = st.columns([0.4, 2])
         with col1:
-            st.image(load_images("Content/images/starcraft2AI.png"))   
+            st.image("Content/images/starcraft2AI.png")   
         with col2:
             st.subheader("[StarCraft 2 AI](https://photos.app.goo.gl/5moREbVnhaJ8UZVX6)")
             st.markdown(
@@ -73,7 +73,7 @@ def projects_page():
             
         col1, col2 = st.columns([0.4, 2])
         with col1:
-            st.image(load_images('Content/images/imagecap.png'))   
+            st.image('Content/images/imagecap.png')   
         with col2:
             st.subheader("[Image Caption AI](https://photos.app.goo.gl/5moREbVnhaJ8UZVX6)")
             st.markdown(
@@ -86,7 +86,7 @@ def projects_page():
             , unsafe_allow_html=True)
         col1, col2 = st.columns([0.4, 2])
         with col1:
-            st.image(load_images('Content/images/wandb.png'))   
+            st.image('Content/images/wandb.png')  
         with col2:
             st.subheader("[Weights & Biases tutorial](https://medium.com/@singh.tarus/intro-to-wandb-weights-and-biases-a-tool-for-hyperparameter-tuning-part-1-99cb418b4b62)")
             st.markdown(
@@ -99,7 +99,7 @@ def projects_page():
 
         col1, col2 = st.columns([0.4, 2])
         with col1:
-            st.image(load_images('Content/images/modelparam.png'))   
+            st.image('Content/images/modelparam.png')
         with col2:
             st.subheader("[Model evaluation and parameter mapping](https://medium.com/@singh.tarus/a-dive-into-ml-models-feature-selection-and-interpretation-faf4bbcc075d)")
             st.markdown(

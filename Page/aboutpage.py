@@ -110,4 +110,4 @@ def homepage(about_gif1, education_gif):
     ]
 
     # Render the table
-    #st.table(data)
+    st.table(data)
