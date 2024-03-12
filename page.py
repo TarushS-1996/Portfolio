@@ -79,7 +79,7 @@ def main():
         </a><br>
         <a href="https://medium.com/@singh.tarus" target="_blank" style="display: inline-block; vertical-align: middle; text-decoration: none; color: white;">
             <img src="https://icons.getbootstrap.com/assets/icons/medium.svg" alt="LinkedIn" width="30" height="30" style="float: left; margin-right: 10px;">
-            <span style="font-size: 16px; display: inline-block; vertical-align: middle; color: white;"> :Medium</span>
+            <span style="font-size: 16px; display: inline-block; vertical-align: middle;"> :Medium</span>
         </a><br>
         """,
         unsafe_allow_html=True
