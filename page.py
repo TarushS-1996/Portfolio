@@ -11,6 +11,9 @@ import json
 
 load_image = Image.open('Content/images/starcraft2AI.png')
 
+def clear_session_state():
+    st.session_state.clear()
+
 def read_json(json_path):
     with open(json_path, "r") as f:
         data = json.load(f)
@@ -95,10 +98,13 @@ def main():
     )
             
     if selected == 'About':
+        clear_session_state()
         homepage(about_gif1, education_gif)
     elif selected == 'Experiences':
+        clear_session_state()
         projects_page(timeLineData=timeline_data)
     elif selected == 'Contact':
+        clear_session_state()
         contactpage(contact_gif)
 
 if __name__ == '__main__':
