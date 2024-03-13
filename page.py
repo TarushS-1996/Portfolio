@@ -99,7 +99,7 @@ def main():
             
     if selected == 'About':
         clear_session_state()
-        homepage(about_gif1, education_gif)
+        homepage(about_gif1, education_gif, skillset_data)
     elif selected == 'Experiences':
         clear_session_state()
         projects_page(timeLineData=timeline_data)

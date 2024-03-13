@@ -1,7 +1,8 @@
 import streamlit as st
 from streamlit_lottie import st_lottie
+import pandas as pd
 
-def homepage(about_gif1, education_gif):
+def homepage(about_gif1, education_gif, skillsData):
     st.title("Hi, I'm Tarush")
 
     # Create a layout with two columns
@@ -102,12 +103,7 @@ def homepage(about_gif1, education_gif):
     """, unsafe_allow_html=True)
 
     # Data for the table
-    data = [
-        ["Programming Language", "Python, Java, HTML, SQL, C/C++, CSS"],
-        ["Cloud", "AWS Lambda, AWS EC2, AWS Elastic search, AWS Sagemaker, AWS SNS, Azure Function, Azure VM, REST API, Terraform, Kubernetes, FLASK, RESTful services"],
-        ["AI Tools", "Scikit-learn, OpenCV, Tensorflow, RASA, TfLearn, AutoML, Keras, Huggingface Transformers, XGBoost, GBM, NLTK, SpaCy, PyTorch, GLM, ResNet, Fast-RCNN, Alexnet, YOLO, Vision Transformers, ONNX, TensorRT"],
-        ["Development tools", "Postman, Git, Jupyter Notebook, Weights&Biases"]
-    ]
-
-    # Render the table
-    st.dataframe(data, hide_index=True, use_container_width=True)
+    data = skillsData
+    data = pd.DataFrame.from_dict(data, orient='index', columns=['Skills'])
+    
+    st.table(data)
