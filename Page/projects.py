@@ -50,7 +50,7 @@ def projects_page(timeLineData):
     ### try to have the projects as columns instead of one below the other
     #col1, col2, col3 = st.columns([1, 1, 1])  
     # Deep Learning section
-    with st.expander("Deep Learning", expanded=True):
+    with st.expander("Deep Learning"):
         col1, col2 = st.columns([0.4, 2])
         with col1:
             st.image("Content/images/starcraft2AI.png")   
