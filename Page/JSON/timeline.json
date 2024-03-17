@@ -70,6 +70,26 @@
       },
       {
         "start_date": {
+          "year": 2020,
+          "month": 6
+        },
+        "text": {
+          "headline": "HappSales NLP Development Team Lead",
+          "text": "Developed NLP models for customer support chatbots. Improved customer satisfaction by 20% and reduced response time by 30%."
+        }
+      },
+      {
+        "start_date": {
+          "year": 2021,
+          "month": 9
+        },
+        "text": {
+          "headline": "HappSales Product upselling system",
+          "text": "GraphQL API upsell POC predicted 20% lift for new customers, 70% for existing ones "
+        }
+      },
+      {
+        "start_date": {
           "year": 2022,
           "month": 9
         },
