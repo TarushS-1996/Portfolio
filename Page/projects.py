@@ -150,6 +150,20 @@ def projects_page(timeLineData):
                 """,
                 unsafe_allow_html=True
             )
+        col1, col2 = st.columns([0.4, 2])
+        with col1:
+            st.image('Content/images/ros1.png')
+        with col2:
+            st.subheader("[SRM Team Huamnoid](https://photos.app.goo.gl/LHr6Get7VZCGdkVCA)")
+            st.markdown(
+                """<ul>
+                    <li> Spearheaded the development of bipedal robots as their electronics domain head</li>
+                    <li> Collaborated with mechanical and computer vision teams while deligating tasks for bipedal gait</li>
+                    <li> Led the team to competiion victories held in San Jose  <a href="https://photos.app.goo.gl/6hbodrUTCax755jX8">Link</a> </li>
+                    </ul>
+                """,
+                unsafe_allow_html=True
+            )
     
     with st.expander("Software Development"):
         col1, col2 = st.columns([0.4, 2])
