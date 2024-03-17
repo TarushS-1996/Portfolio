@@ -152,9 +152,9 @@ def projects_page(timeLineData):
             )
         col1, col2 = st.columns([0.4, 2])
         with col1:
-            st.image('Content/images/ros1.png')
+            st.image('Content/images/Team.jpg')
         with col2:
-            st.subheader("[SRM Team Huamnoid](https://photos.app.goo.gl/LHr6Get7VZCGdkVCA)")
+            st.subheader("[SRM Team Huamnoid](https://photos.app.goo.gl/6hbodrUTCax755jX8)")
             st.markdown(
                 """<ul>
                     <li> Spearheaded the development of bipedal robots as their electronics domain head</li>
