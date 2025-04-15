@@ -29,11 +29,14 @@ def homepage(about_gif1, education_gif, skillsData):
                         }
                     }
             </style>
-            <div class = "content">Hello, I'm Tarush Singh, a graduate student at Northeastern University with a passion for AI and robotics. 
+            <div class = "content">Hello,<br><br>
+            I'm Tarush Singh, a graduate student at Northeastern University with a passion for AI and robotics. 
             I excel in Java, Python, and deep learning tools like TensorFlow and PyTorch. During my tenure as an NLP Development Head at HappSales, 
             I designed solutions that streamlined application interactions and boosted productivity. 
             Now, I'm eager to explore innovative projects and contribute my skills to the exciting world of AI and robotics. 
-            Let's connect and create something incredible together. Thank you!</div>
+            Let's connect and create something incredible together.
+            <br>
+            <br>Thank you!</div>
             """
         st.markdown(about_me_text, unsafe_allow_html=True)
         
