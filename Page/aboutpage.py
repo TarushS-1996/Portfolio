@@ -35,8 +35,8 @@ def homepage(about_gif1, education_gif, skillsData):
             I designed solutions that streamlined application interactions and boosted productivity. 
             Now, I'm eager to explore innovative projects and contribute my skills to the exciting world of AI and robotics. 
             Let's connect and create something incredible together.
-            <br>
-            <br>Thank you!</div>
+            <br><br>
+            Thank you!</div>
             """
         st.markdown(about_me_text, unsafe_allow_html=True)
         
