@@ -101,6 +101,44 @@
           "headline": "Northeastern University Masters in Information Systems",
           "text": "Pursuing Master's degree, focusing on applying technology to solve real-world problems. Taking courses in Deep Learning methods and optimization techniques."
         }
+      },
+      {
+        "start_date":{
+          "year":2024,
+          "month": 7
+        },
+        "end_date":{
+          "year": 2025,
+          "month": 4
+        },
+        "text":{
+          "headline": "Modlee LLC",
+          "text": "Joined Modlee as a AI Engineer, bringing skills in the field of Generative modelling, LLM and Deep Learning optimizations"
+        }
+      },
+      {
+        "start_date": {
+          "year": 2024,
+          "month": 9
+        },
+        "text": {
+          "headline": "Modlee RAG System (AI Engineer)",
+          "text": "Developed a multi-stage RAG pipeline with custom tagging for enriched context. Boosted context-match accuracy from 65–70% to 86–95%. Standardized LLM output using prompt templates to ensure consistent formatting."
+        }
+      },
+      {
+        "start_date": {
+          "year": 2025,
+          "month": 1
+        },
+        "end_date": {
+          "year": 2025,
+          "month": 4
+        },
+        "text": {
+          "headline": "Modlee Autonomous Agents (AI Engineer)",
+          "text": "Built agents that dynamically interacted with Cube API for user queries. Integrated ML-based summarization of tabular data, clustering, and KG reasoning for high-fidelity insights across sessions."
+        }
       }
     ]
   }
