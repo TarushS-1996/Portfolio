@@ -58,7 +58,7 @@ def main():
         unsafe_allow_html=True,
     )
     
-    st.sidebar.image('Content/images/Profile.jpeg', use_column_width=True)
+    st.sidebar.image('Content/images/Profile.jpeg', use_container_width=True)
     st.markdown(
         """
         <style>
