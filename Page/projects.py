@@ -3,7 +3,8 @@ import streamlit as st
 import os
 import streamlit_timeline as timeline
 
-
+im_width = 300
+im_height = 240
 def load_images(image_path):
     img = Image.open(image_path)
     return img
@@ -53,7 +54,7 @@ def projects_page(timeLineData):
     with st.expander("Deep Learning"):
         col1, col2 = st.columns([0.4, 2])
         with col1:
-            st.image("Content/images/starcraft2AI.png")   
+            st.image("Content/images/starcraft2AI.png", width=im_width)   
         with col2:
             st.subheader("[StarCraft 2 AI](https://photos.app.goo.gl/5moREbVnhaJ8UZVX6)")
             st.markdown(
@@ -67,7 +68,7 @@ def projects_page(timeLineData):
             
         col1, col2 = st.columns([0.4, 2])
         with col1:
-            st.image('Content/images/imagecap.png')   
+            st.image('Content/images/imagecap.png', width = im_width)   
         with col2:
             st.subheader("[Image Caption AI](https://photos.app.goo.gl/5moREbVnhaJ8UZVX6)")
             st.markdown(
@@ -80,7 +81,7 @@ def projects_page(timeLineData):
             , unsafe_allow_html=True)
         col1, col2 = st.columns([0.4, 2])
         with col1:
-            st.image('Content/images/wandb.png')  
+            st.image('Content/images/wandb.png', width = im_width)  
         with col2:
             st.subheader("[Weights & Biases tutorial](https://medium.com/@singh.tarus/intro-to-wandb-weights-and-biases-a-tool-for-hyperparameter-tuning-part-1-99cb418b4b62)")
             st.markdown(
@@ -93,7 +94,7 @@ def projects_page(timeLineData):
 
         col1, col2 = st.columns([0.4, 2])
         with col1:
-            st.image('Content/images/modelparam.png')
+            st.image('Content/images/modelparam.png', width = im_width)
         with col2:
             st.subheader("[Model evaluation and parameter mapping](https://medium.com/@singh.tarus/a-dive-into-ml-models-feature-selection-and-interpretation-faf4bbcc075d)")
             st.markdown(
@@ -104,12 +105,26 @@ def projects_page(timeLineData):
                     </ul>
                 """
             , unsafe_allow_html=True)
+        
+        col1, col2 = st.columns([0.4, 2])
+        with col1:
+            st.image('Content/images/PytorchCuda.png', width = im_width)
+        with col2:
+            st.subheader("[Supercharging PyTorch Training: 10 GPU Optimizations with Functional Code](https://medium.com/@singh.tarus/supercharging-pytorch-training-10-gpu-optimizations-with-functional-code-f50b8f719bad)")
+            st.markdown(
+                """<ul>
+                    <li> Analyzing multiple out-of-the-box tools provided by PyTorch to use CUDA </li>
+                    <li> Provided a list of methods that will be useful in different situations</li>
+                    <li> Explained using code snippets for each of the methods on how to use and employ them easily into the workflow</li>
+                    </ul>
+                """
+            , unsafe_allow_html=True)
             
     with st.expander("Robotics"):
         link = "https://www.researchgate.net/publication/330599023_Flamen_-_7_DOF_Robotic_Arm_to_Manipulate_a_Spanish_Fan"
         col1, col2 = st.columns([0.4, 2])
         with col1:
-            st.image('Content/images/ros1.png')
+            st.image('Content/images/ros1.png', width = im_width)
         with col2:
             st.subheader("[ROS1 Simulation](https://photos.app.goo.gl/LHr6Get7VZCGdkVCA)")
             st.markdown(
@@ -123,7 +138,7 @@ def projects_page(timeLineData):
             )
         col1, col2 = st.columns([0.4, 2])
         with col1:
-            st.image('Content/images/Athum.png')
+            st.image('Content/images/Athum.png', width = im_width)
         with col2:
             st.subheader("[Medical Telepresence Robot](https://photos.app.goo.gl/eVE9oMqJ6cy2tSRY9)")
             st.markdown(
@@ -138,7 +153,7 @@ def projects_page(timeLineData):
         
         col1, col2 = st.columns([0.4, 2])
         with col1:
-            st.image('Content/images/iros.png')
+            st.image('Content/images/iros.png', width = im_width)
         with col2:
             st.subheader("[IROS Fan challenge](https://drive.google.com/drive/folders/17FSnqHi2I-QijiTSAWHSn0HVN1rAzhPd)")
             st.markdown(
@@ -152,7 +167,7 @@ def projects_page(timeLineData):
             )
         col1, col2 = st.columns([0.4, 2])
         with col1:
-            st.image('Content/images/Team.jpg')
+            st.image('Content/images/Team.jpg', width = im_width)
         with col2:
             st.subheader("[SRM Team Huamnoid](https://photos.app.goo.gl/6hbodrUTCax755jX8)")
             st.markdown(
@@ -168,7 +183,7 @@ def projects_page(timeLineData):
     with st.expander("Software Development"):
         col1, col2 = st.columns([0.4, 2])
         with col1:
-            st.image('Content/images/dominex.png')
+            st.image('Content/images/dominex.png', width = im_width)
         with col2:
             st.subheader("[Dominex](https://github.com/TarushS-1996/DrugLifeCycel-AED5100)")
             st.markdown(
