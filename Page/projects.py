@@ -119,7 +119,25 @@ def projects_page(timeLineData):
                     </ul>
                 """
             , unsafe_allow_html=True)
-            
+
+    with st.expander("AI Agents"):
+        link = "https://medium.com/@singh.tarus/llm-context-enhancement-ed0b005c3673"
+        col1, col2 = st.columns([0.4, 2])
+        with col1:
+            st.image('Content/images/LLMEnrichment.png', width = im_width)
+        with col2:
+            st.subheader("[LLM Context Enrichment](https://medium.com/@singh.tarus/llm-context-enhancement-ed0b005c3673)")
+            st.markdown(
+                """
+                <ul>
+                    <li> Explored challenges of limited context in Large Language Models based on real-world experience with agentic AI systems</li>
+                    <li> Illustrated how machine learning techniques can enrich and curate context, leading to more accurate and grounded LLM responses</li>
+                    <li> Shared a practical, non-coding framework and visual guide for implementing contextual enrichment in real-world AI systems </li>
+                </ul>
+                """,
+                unsafe_allow_html=True
+            )
+
     with st.expander("Robotics"):
         link = "https://www.researchgate.net/publication/330599023_Flamen_-_7_DOF_Robotic_Arm_to_Manipulate_a_Spanish_Fan"
         col1, col2 = st.columns([0.4, 2])
