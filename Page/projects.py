@@ -137,6 +137,23 @@ def projects_page(timeLineData):
                 """,
                 unsafe_allow_html=True
             )
+        link = "https://medium.com/@singh.tarus/mcp-from-scratch-building-a-python-agent-that-understands-and-executes-your-code-b51a4687a732"
+        col1, col2 = st.columns([0.4, 2])
+        with col1:
+            st.image('Content/images/MCP.png', width = im_width)
+        with col2:
+            st.subheader("[Agentic MCP From Scratch](https://medium.com/@singh.tarus/mcp-from-scratch-building-a-python-agent-that-understands-and-executes-your-code-b51a4687a732)")
+            st.markdown(
+                """
+                <ul>
+                    <li> Designed and provided a tutorial on an MCP style python class</li>
+                    <li> Desgined to extract and understand docstring present in classes and methods to decide which of them to call based on user query</li>
+                    <li> Tutorial also delves into executing the methods post their selection </li>
+                    <li> Made system intelligent to understand the order and call previously executed methods as inputs to others which are in order.</li>
+                </ul>
+                """,
+                unsafe_allow_html=True
+            )
 
     with st.expander("Robotics"):
         link = "https://www.researchgate.net/publication/330599023_Flamen_-_7_DOF_Robotic_Arm_to_Manipulate_a_Spanish_Fan"
