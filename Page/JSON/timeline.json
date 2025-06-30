@@ -139,6 +139,16 @@
           "headline": "Modlee Autonomous Agents (AI Engineer)",
           "text": "Built agents that dynamically interacted with Cube API for user queries. Integrated ML-based summarization of tabular data, clustering, and KG reasoning for high-fidelity insights across sessions."
         }
+      },
+      {
+        "start_date": {
+          "year": 2025,
+          "month": 6
+        },
+        "text": {
+          "headline": "FinOpsly (AI Lead)",
+          "text": "Built agents that dynamically interacted with Snowflake API for Finops based questions. Integrated ML-based summarization of tabular data, clustering, and KG reasoning for high-fidelity insights across sessions."
+        }
       }
     ]
   }
