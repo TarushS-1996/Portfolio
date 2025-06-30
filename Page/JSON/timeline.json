@@ -141,13 +141,14 @@
         }
       },
       {
-        "start_date": {
-          "year": 2025,
+        "start_date":{
+          "year":2025,
           "month": 6
         },
-        "text": {
-          "headline": "FinOpsly (AI Lead)",
-          "text": "Built agents that dynamically interacted with Snowflake API for Finops based questions. Integrated ML-based summarization of tabular data, clustering, and KG reasoning for high-fidelity insights across sessions."
+
+        "text":{
+          "headline": "FinOpsly Inc",
+          "text": "Joined FinOpsly as a AI lead, bringing Agentic AI skills in the field cloud FinOps analyzing costs and usage"
         }
       }
     ]
